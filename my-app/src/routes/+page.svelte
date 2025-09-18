@@ -1,6 +1,13 @@
 <script>
-    import { gsap } from "gsap";
+  import { onMount } from "svelte";
+  import { gsap } from "gsap";
+  import SplitText from "gsap/SplitText";
+
+  let { data } = $props();
+  const members = data.mmbers;
+  const member = data.member.data[0];
+  
+  gsap.registerPlugin(SplitText);
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+
