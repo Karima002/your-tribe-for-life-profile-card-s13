@@ -7,6 +7,8 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+
+	<meta rel="author" content="Karima Mouadi">
 </svelte:head>
 
 {@render children?.()}
