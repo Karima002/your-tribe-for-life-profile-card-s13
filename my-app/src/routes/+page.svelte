@@ -42,3 +42,47 @@
     </section>
 </main>
 
+
+<style>
+
+    @media (prefers-reduced-motion: no-preference) {
+    .intro {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: 100svh; /* onderzoek svh een keer */
+        width: 100%;
+        text-align: center;
+        background-color: #8C867F;
+
+    }
+}
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #8C867F;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .visitekaartje {
+        border: 2px solid wh;
+        width: 30em;
+        height: 20em;
+        border-radius: .5em;
+    }
+
+
+</style>
