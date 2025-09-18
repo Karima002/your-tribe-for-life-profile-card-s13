@@ -39,7 +39,18 @@
 
     <section>
         <article class="visitekaartje">
-           
+            <p>{member.bio}</p>
+            <a href="">
+                <p>Github handle: {member.github_handle}</p>
+            </a>
+
+            <a href="">
+                <p>LinkedIn: Karima M.</p>
+            </a>
+
+            <p>Favorite country: {member.fav_country}</p>
+
+            <h1 class="heading-center">{member.name}</h1>
         </article>
     </section>
 </main>
