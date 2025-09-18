@@ -20,6 +20,7 @@
       stagger: 0.05, //https://gsap.com/resources/getting-started/Staggers/
       ease: "power2.out" 
     })
+
     .to('.intro', {
         autoAlpha: 0, 
         duration: 1,
@@ -38,6 +39,7 @@
 
     <section>
         <article class="visitekaartje">
+           
         </article>
     </section>
 </main>
@@ -59,7 +61,7 @@
         height: 100svh; /* onderzoek svh een keer */
         width: 100%;
         text-align: center;
-        background-color: #8C867F;
+        background-color: #361419;
 
     }
 }
@@ -68,20 +70,37 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: #8C867F;
+        background-color: #361419;
     }
 
     h1 {
         font-size: 2.5rem;
         color: white;
         text-transform: uppercase;
+       
+    }
+
+    .heading-center {
+        position: absolute;
+        bottom: 3.2em;
+        font-weight: 400;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3rem;
     }
 
     .visitekaartje {
-        border: 2px solid wh;
-        width: 30em;
-        height: 20em;
+        border: 2px solid white;
+        width: 27em;
+        height: 40em;
         border-radius: .5em;
+    }
+
+    p {
+        color: white;
+        padding: 2em;
+        font-size: 1.2rem;
+        font-weight: 300;
     }
 
 
