@@ -8,6 +8,27 @@
   const member = data.member.data[0];
   
   gsap.registerPlugin(SplitText);
+
+  
+    let split = new SplitText("h1", { type: "chars" });
+    const tl = gsap.timeline();
+    
+    tl.from(split.chars, {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      stagger: 0.05, //https://gsap.com/resources/getting-started/Staggers/
+      ease: "power2.out" 
+    })
+    
+    .to('.intro', {
+        autoAlpha: 0, 
+        duration: 1,
+        ease: 'power4.out'
+    })
+
+
+
 </script>
 
 <main>
