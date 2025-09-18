@@ -9,7 +9,7 @@
   
   gsap.registerPlugin(SplitText);
 
-  
+  onMount(() => {
     let split = new SplitText("h1", { type: "chars" });
     const tl = gsap.timeline();
     
@@ -20,14 +20,13 @@
       stagger: 0.05, //https://gsap.com/resources/getting-started/Staggers/
       ease: "power2.out" 
     })
-    
     .to('.intro', {
         autoAlpha: 0, 
         duration: 1,
         ease: 'power4.out'
     })
 
-
+  });
 
 </script>
 
